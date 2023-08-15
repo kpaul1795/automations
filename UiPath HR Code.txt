@@ -1,0 +1,306 @@
+UiPath Human Resource Code
+
+1.1 Single Excel Process Scope (SequenceX)
+Private = False
+Variables
+Notes(IWorkbookQuickHandle)
+Activities
+1.4 Use Browser Firefox: Dashboard | REDACTED (NApplicationCard)
+Window attach mode = ByInstance
+Unified Application Target
+Selector = <html app='firefox.exe' title='Dashboard | DCI Portal' />
+URL = REDACTED
+Input mode = HardwareEvents
+Resize window = None
+Private = False
+Body
+1.5 Do (Sequence)
+Private = False
+Activities
+1.156 Click 'Add Entry' (NClick)
+Click type = Single
+Key modifiers = None
+Mouse button = Left
+Input mode = SameAsCard
+Target
+Window selector (Application instance) = <html app='firefox.exe' title='Dashboard | DCI Portal' />
+Visibility check = Interactive
+Responsive websites = False
+Strict selector = <webctrl id='btnAddCEntry' tag='BUTTON' />
+Fuzzy selector = <webctrl id='btnAddCEntry' tag='BUTTON' type='' class='btn btn-blue' aaname='Add Entry' check:innerText='Add Entry' />
+Targeting methods = FuzzySelector, Image
+Private = False
+1.146 Type Into 'Client' (NTypeInto)
+Activate = True
+Click before typing = Single
+Empty field = SingleLine
+Text = mesi
+Input mode = SameAsCard
+Target
+Window selector (Application instance) = <html app='firefox.exe' title='Dashboard | DCI Portal' />
+Visibility check = Interactive
+Responsive websites = True
+Anchor 1
+Strict selector = <webctrl parentid='dvClient' tag='LABEL' />
+Fuzzy selector = <webctrl parentid='dvClient' tag='LABEL' type='' class='col-sm-3 control-label requiredLabel' aaname='Client:' check:innerText='Client:' />
+Targeting methods = FuzzySelector, Image
+Strict selector = <webctrl id='txtClientAccount' tag='INPUT' />
+Fuzzy selector = <webctrl id='txtClientAccount' tag='INPUT' type='text' class='form-control required nonsubmittextboxauto drpProg ui-autocomplete-input' aaname='Client:' />
+Targeting methods = FuzzySelector, Image
+Private = False
+1.144 Delay (Delay)
+Duration = 00:00:02
+Private = False
+1.135 Click 'MESIDOR JASMINE - GA8856' (NClick)
+Click type = Single
+Key modifiers = None
+Mouse button = Left
+Input mode = SameAsCard
+Target
+Window selector (Application instance) = <html app='firefox.exe' title='Dashboard | DCI Portal' />
+Visibility check = Interactive
+Responsive websites = False
+Anchor 1
+Strict selector = <webctrl parentid='dvClient' tag='LABEL' />
+Fuzzy selector = <webctrl parentid='dvClient' tag='LABEL' type='' class='col-sm-3 control-label requiredLabel' aaname='Client:' check:innerText='Client:' />
+Targeting methods = FuzzySelector, Image
+Strict selector = <webctrl id='ui-id-9' tag='DIV' />
+Fuzzy selector = <webctrl id='ui-id-9' tag='DIV' type='' class='ui-menu-item-wrapper' aaname='MESIDOR JASMINE - GA8856' check:innerText='MESIDOR JASMINE - GA8856' />
+Targeting methods = FuzzySelector, Image
+Private = False
+1.126 Click 'Service Code' (NClick)
+Click type = Single
+Key modifiers = None
+Mouse button = Left
+Input mode = SameAsCard
+Target
+Window selector (Application instance) = <html app='firefox.exe' title='Dashboard | DCI Portal' />
+Visibility check = Interactive
+Responsive websites = False
+Anchor 1
+Strict selector = <webctrl parentid='DivServicePunch' tag='LABEL' />
+Fuzzy selector = <webctrl parentid='DivServicePunch' tag='LABEL' type='' class='col-sm-3 control-label requiredLabel' aaname='Service Code:' check:innerText='Service Code:' />
+Targeting methods = FuzzySelector, Image
+Strict selector = <webctrl id='AssociatedserviceCode' tag='SELECT' />
+Fuzzy selector = <webctrl id='AssociatedserviceCode' tag='SELECT' type='' class='form-control required valid' aaname='Service Code:' />
+Targeting methods = FuzzySelector, Image
+Private = False
+1.119 Click 'CLE' (NClick)
+Click type = Single
+Key modifiers = None
+Mouse button = Left
+Input mode = HardwareEvents
+Target
+Window selector (Application instance) = <wnd app='firefox.exe' cls='MozillaWindowClass' title='Dashboard | DCI Portal — Mozilla Firefox' />
+Visibility check = Interactive
+Responsive websites = False
+Strict selector = <ctrl name='CLE' role='list item' />
+Fuzzy selector = <ctrl name='CLE' role='list item' automationid='' check:text='CLE' />
+Targeting methods = Selector, FuzzySelector, Image
+Private = False
+1.110 Click 'Check In' (NClick)
+Click type = Single
+Key modifiers = None
+Mouse button = Left
+Input mode = HardwareEvents
+Target
+Window selector (Application instance) = <html app='firefox.exe' title='Dashboard | DCI Portal' />
+Visibility check = Interactive
+Responsive websites = False
+Anchor 1
+Strict selector = <webctrl parentid='divCheckInCheckoutTime' tag='LABEL' />
+Fuzzy selector = <webctrl parentid='divCheckInCheckoutTime' tag='LABEL' type='' class='col-sm-3 control-label requiredLabel' aaname='Check In:' check:innerText='Check In:' />
+Targeting methods = FuzzySelector, Image
+Strict selector = <webctrl idx='2' parentid='timepicker1' tag='SPAN' />
+Fuzzy selector = <webctrl type='' parentid='timepicker1' tag='SPAN' class='glyphicon glyphicon-time' aaname='' />
+Targeting methods = FuzzySelector, Image
+Private = False
+1.103 Click '3:00 PM' (NClick)
+Click type = Single
+Key modifiers = None
+Mouse button = Left
+Input mode = HardwareEvents
+Target
+Window selector (Application instance) = <html app='firefox.exe' title='Dashboard | DCI Portal' />
+Visibility check = Interactive
+Responsive websites = False
+Strict selector = <webctrl class='ui-timepicker-pm' idx='7' parentid='timepicker1' tag='LI' />
+Fuzzy selector = <webctrl class='ui-timepicker-pm' type='' parentid='timepicker1' tag='LI' aaname='3:00 PM' check:innerText='3:00 PM' />
+Targeting methods = FuzzySelector, Image
+Private = False
+1.94 Click 'Check Out' (NClick)
+Click type = Single
+Key modifiers = None
+Mouse button = Left
+Input mode = HardwareEvents
+Target
+Window selector (Application instance) = <html app='firefox.exe' title='Dashboard | DCI Portal' />
+Visibility check = Interactive
+Responsive websites = False
+Anchor 1
+Strict selector = <webctrl parentid='serviceTimeDiv' tag='LABEL' />
+Fuzzy selector = <webctrl parentid='serviceTimeDiv' tag='LABEL' type='' class='form-control-static checkout-custom requiredLabel' aaname='Check Out:' check:innerText='Check Out:' />
+Targeting methods = FuzzySelector, Image
+Strict selector = <webctrl idx='2' parentid='timepicker2' tag='SPAN' />
+Fuzzy selector = <webctrl type='' parentid='timepicker2' tag='SPAN' class='glyphicon glyphicon-time' aaname='' />
+Targeting methods = FuzzySelector, Image
+Private = False
+1.87 Click '11:00 PM' (NClick)
+Click type = Single
+Key modifiers = None
+Mouse button = Left
+Input mode = HardwareEvents
+Target
+Window selector (Application instance) = <html app='firefox.exe' title='Dashboard | DCI Portal' />
+Visibility check = Interactive
+Responsive websites = False
+Strict selector = <webctrl class='ui-timepicker-pm' idx='23' parentid='timepicker2' tag='LI' />
+Fuzzy selector = <webctrl class='ui-timepicker-pm' type='' parentid='timepicker2' tag='LI' aaname='11:00 PM' check:innerText='11:00 PM' />
+Targeting methods = FuzzySelector, Image
+Private = False
+1.78 Click 'EVV Method' (NClick)
+Click type = Single
+Key modifiers = None
+Mouse button = Left
+Input mode = HardwareEvents
+Target
+Window selector (Application instance) = <html app='firefox.exe' title='Dashboard | DCI Portal' />
+Visibility check = Interactive
+Responsive websites = False
+Anchor 1
+Strict selector = <webctrl parentid='divEvvMethod' tag='LABEL' />
+Fuzzy selector = <webctrl parentid='divEvvMethod' tag='LABEL' type='' class='col-sm-3 control-label requiredLabel' aaname='EVV Method:' check:innerText='EVV Method:' />
+Targeting methods = FuzzySelector, Image
+Strict selector = <webctrl id='drpEvvMethod' tag='SELECT' />
+Fuzzy selector = <webctrl id='drpEvvMethod' tag='SELECT' type='' class='form-control custom-select required drp' aaname='EVV Method:' />
+Targeting methods = FuzzySelector, Image
+Private = False
+1.71 Click 'Portal Signoff' (NClick)
+Click type = Single
+Key modifiers = None
+Mouse button = Left
+Input mode = HardwareEvents
+Target
+Window selector (Application instance) = <wnd app='firefox.exe' cls='MozillaWindowClass' title='Dashboard | DCI Portal — Mozilla Firefox' />
+Visibility check = Interactive
+Responsive websites = False
+Strict selector = <ctrl name='Portal Signoff' role='list item' />
+Fuzzy selector = <ctrl name='Portal Signoff' role='list item' automationid='' check:text='Portal Signoff' />
+Targeting methods = Selector, FuzzySelector, Image
+Private = False
+1.62 Click 'Reason' (NClick)
+Click type = Single
+Key modifiers = None
+Mouse button = Left
+Input mode = HardwareEvents
+Target
+Window selector (Application instance) = <html app='firefox.exe' title='Dashboard | DCI Portal' />
+Visibility check = Interactive
+Responsive websites = False
+Anchor 1
+Strict selector = <webctrl parentid='reasonCodeIcon' tag='LABEL' />
+Fuzzy selector = <webctrl parentid='reasonCodeIcon' tag='LABEL' type='' class='col-sm-3 control-label text-left' aaname='Reason:' check:innerText='Reason:' />
+Targeting methods = FuzzySelector, Image
+Strict selector = <webctrl parentid='customReasonCode' tag='I' />
+Fuzzy selector = <webctrl parentid='customReasonCode' tag='I' type='' class='fa fa-plus-circle' aaname='' />
+Targeting methods = FuzzySelector, Image
+Private = False
+1.53 Click 'Add Reason' (NClick)
+Click type = Single
+Key modifiers = None
+Mouse button = Left
+Input mode = HardwareEvents
+Target
+Window selector (Application instance) = <html app='firefox.exe' title='Dashboard | DCI Portal' />
+Visibility check = Interactive
+Responsive websites = False
+Anchor 1
+Strict selector = <webctrl parentid='resonCodeDetailRgn' tag='LABEL' />
+Fuzzy selector = <webctrl parentid='resonCodeDetailRgn' tag='LABEL' type='' class='col-sm-3 control-label requiredLabel' aaname='Add Reason Codes: ' check:innerText='Add Reason Codes: &#xD;&#xA;required' />
+Targeting methods = FuzzySelector, Image
+Strict selector = <webctrl id='drpCustomReason' tag='SELECT' />
+Fuzzy selector = <webctrl id='drpCustomReason' tag='SELECT' type='' class='form-control' aaname='Add Reason Codes: required' />
+Targeting methods = FuzzySelector, Image
+Private = False
+1.46 Click 'Landline: Employee' (NClick)
+Click type = Single
+Key modifiers = None
+Mouse button = Left
+Input mode = HardwareEvents
+Target
+Window selector (Application instance) = <wnd app='firefox.exe' cls='MozillaWindowClass' title='Dashboard | DCI Portal — Mozilla Firefox' />
+Visibility check = Interactive
+Responsive websites = False
+Strict selector = <ctrl name='Landline: Employee forgot to clock-in and out - 910' role='list item' />
+Fuzzy selector = <ctrl name='Landline: Employee forgot to clock-in and out - 910' role='list item' automationid='' check:text='Landline: Employee forgot to clock-in and out - 910' />
+Targeting methods = Selector, FuzzySelector, Image
+Private = False
+1.37 Click 'Add Reason' (NClick)
+Click type = Single
+Key modifiers = None
+Mouse button = Left
+Input mode = HardwareEvents
+Target
+Window selector (Application instance) = <html app='firefox.exe' title='Dashboard | DCI Portal' />
+Visibility check = Interactive
+Responsive websites = False
+Anchor 1
+Strict selector = <webctrl parentid='resonCodeDetailRgn' tag='LABEL' />
+Fuzzy selector = <webctrl parentid='resonCodeDetailRgn' tag='LABEL' type='' class='col-sm-3 control-label requiredLabel' aaname='Add Reason Codes: ' check:innerText='Add Reason Codes: &#xD;&#xA;required' />
+Targeting methods = FuzzySelector, Image
+Strict selector = <webctrl parentid='idAddCustomReason' tag='I' />
+Fuzzy selector = <webctrl parentid='idAddCustomReason' tag='I' type='' class='fa fa-plus-circle add-icon' aaname='' />
+Targeting methods = FuzzySelector, Image
+Private = False
+1.30 Click 'Yes' (NClick)
+Click type = Single
+Key modifiers = None
+Mouse button = Left
+Input mode = HardwareEvents
+Target
+Window selector (Application instance) = <html app='firefox.exe' title='Dashboard | DCI Portal' />
+Visibility check = Interactive
+Responsive websites = False
+Strict selector = <webctrl id='btnFormSubmitAddReasonModal' tag='BUTTON' />
+Fuzzy selector = <webctrl id='btnFormSubmitAddReasonModal' tag='BUTTON' type='button' class='btn btn-blue-s' aaname='Yes' check:innerText='Yes' />
+Targeting methods = FuzzySelector, Image
+Private = False
+1.24 Message Box (MessageBox)
+AutomaticallyCloseAfter = 00:00:00
+Buttons = OkCancel
+Content = "Select Date and click 'Continue' once complete."
+Private = False
+1.15 Click 'Save' (NClick)
+Click type = Single
+Key modifiers = None
+Mouse button = Left
+Input mode = SameAsCard
+Target
+Window selector (Application instance) = <html app='firefox.exe' title='Dashboard | DCI Portal' />
+Visibility check = Interactive
+Responsive websites = False
+Anchor 1
+Strict selector = <webctrl id='PunchbtnAttachmentCancelPopUp' tag='BUTTON' />
+Fuzzy selector = <webctrl id='PunchbtnAttachmentCancelPopUp' tag='BUTTON' type='button' class='btn btn-gray-s ' aaname='Cancel' check:innerText='Cancel' />
+Targeting methods = FuzzySelector, Image
+Strict selector = <webctrl id='btnTrasactionPunchFormSubmit' tag='BUTTON' />
+Fuzzy selector = <webctrl id='btnTrasactionPunchFormSubmit' tag='BUTTON' type='button' class='btn btn-blue-s mar-l-5' aaname='Save' check:innerText='Save' />
+Targeting methods = FuzzySelector, Image
+Private = False
+1.6 Click 'Yes' (NClick)
+Click type = Single
+Key modifiers = None
+Mouse button = Left
+Input mode = SameAsCard
+Target
+Window selector (Application instance) = <html app='firefox.exe' title='Dashboard | DCI Portal' />
+Visibility check = Interactive
+Responsive websites = False
+Anchor 1
+Strict selector = <webctrl id='CancleAddClient' tag='BUTTON' />
+Fuzzy selector = <webctrl id='CancleAddClient' tag='BUTTON' type='button' class='btn btn-gray-s closeFocuscontrol' aaname='No' check:innerText='No' />
+Targeting methods = FuzzySelector, Image
+Strict selector = <webctrl id='btnFormSubmitSavePunch' tag='BUTTON' />
+Fuzzy selector = <webctrl id='btnFormSubmitSavePunch' tag='BUTTON' type='button' class='btn btn-blue-s' aaname='Yes' check:innerText='Yes' />
+Targeting methods = FuzzySelector, Image
+Private = False
